@@ -1,0 +1,12 @@
+.testimonial {
+  min-width: 400px;
+  min-height: 200px;
+  background-color: rgba(76, 85, 101, 0.7);
+  margin: 0 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(35, 35, 35, 0.3);
+}
+
+.testimonial:first-child {
+  margin-left: 0;
+}
