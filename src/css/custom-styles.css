@@ -1,13 +1,28 @@
-.testimonial {
-  min-width: 500px;
-  min-height: 200px;
-  background-color: #ebebeb;
-  margin: 0 25px;
-  border-radius: 10px;
-  border: 1px solid rgba(35, 35, 35, 0.3);
-  box-shadow: 2px 2px rgba(35, 35, 35, 0.2);
+#menu {
+  left: 0px;
+
+  opacity: 0%;
+  transition: all ease 0.3s;
 }
 
-.testimonial:first-child {
-  margin-left: 0;
+#menu.expanded {
+  opacity: 100%;
+}
+
+.dx {
+  opacity: 0%;
+  transition: all ease 0.3s;
+}
+
+.dx.expanded {
+  opacity: 100%;
+}
+
+.dx1 {
+  opacity: 100%;
+  transition: all ease 0.5s;
+}
+
+.dx1.expanded {
+  opacity: 0%;
 }

@@ -8,7 +8,7 @@
   </head>
   <body class="bg-slate-800 dark:bg-slate-600">
     <nav
-      class="flex flex-row items-center text-offwhite bg-slate-800 dark:bg-slate-600 justify-between h-[80px]"
+      class="flex flex-row items-center text-offwhite bg-slate-800 dark:bg-slate-600 justify-between h-[80px] lg:px-5 xl:px-10"
     >
       <h1
         class="w-full text-left sd:text-center pl-3 sd:p-0 lg:text-left text-3xl sm:text-4xl md:text-5xl font-bold text-offwhite sd:ml-6 dark:text-offwhite"
@@ -37,24 +37,55 @@
       </ul>
 
       <div
-        id="menu"
+        id="menu-hamburger"
         class="flex flex-col justify-center items-center lg:hidden w-[25px] h-[22px] mr-1 sd:mr-5 hover:cursor-pointer"
       >
-        <div class="w-[25px] h-[4px] bg-offwhite mb-[5px]"></div>
-        <div class="w-[25px] h-[4px] bg-offwhite"></div>
-        <div class="w-[25px] h-[4px] bg-offwhite mt-[5px]"></div>
+        <div class="dx1 w-[25px] h-[4px] bg-offwhite mb-[5px]"></div>
+        <div class="dx1 w-[25px] h-[4px] bg-offwhite"></div>
+        <div class="dx1 w-[25px] h-[4px] bg-offwhite mt-[5px]"></div>
+
+        <div
+          class="dx w-[33px] h-[4px] bg-offwhite mt-[5px] rotate-45 absolute -translate-y-[2px]"
+        ></div>
+        <div
+          class="dx w-[33px] h-[4px] bg-offwhite mt-[5px] -rotate-45 absolute -translate-y-[2px]"
+        ></div>
+      </div>
+      <div
+        id="menu"
+        class="absolute top-[80px] flex lg:hidden flex-col items-center justify-around bg-primary text-offwhite h-[250px] w-full py-8 border-t border-t-offwhite"
+      >
+        <p
+          class="font-bold text-4xl md:text-5xl w-full text-center h-[55px] leading-[55px]"
+        >
+          HOME
+        </p>
+        <hr class="border-t border-t-offwhite w-2/3" />
+        <p
+          class="font-bold text-4xl md:text-5xl w-full text-center h-[55px] leading-[55px]"
+        >
+          PRICING
+        </p>
+        <hr class="border-t border-t-offwhite w-2/3" />
+        <p
+          class="font-bold text-4xl md:text-5xl w-full text-center h-[55px] leading-[55px]"
+        >
+          CONTACT
+        </p>
       </div>
     </nav>
-
-    <div class="flex flex-col bg-offwhite dark:bg-night">
+    <!--Top section-->
+    <div
+      class="flex flex-col bg-offwhite dark:bg-night justify-center items-center"
+    >
       <div
-        class="flex flex-col justify-center items-center lg:flex-row h-auto w-full"
+        class="flex flex-col justify-center items-center lg:flex-row h-auto w-5/6"
       >
         <div
           class="flex flex-col justify-center items-center w-full pt-10 pb-2 lg:py-0 lg:w-1/2 h-auto"
         >
           <h3
-            class="text-night text-4xl font-bold mx-10 mb-6 dark:text-offwhite"
+            class="text-night text-4xl font-bold mx-10 mb-6 dark:text-offwhite text-center"
           >
             Here is where the slogan goes.
           </h3>
@@ -79,10 +110,10 @@
           Testimonals
         </h3>
         <div
-          class="flex flex-row items-center h-auto py-10 px-20 w-full overscroll-x-contain overflow-x-auto scrollbar-hide"
+          class="flex flex-row items-center h-auto py-10 px-10 w-full overscroll-x-contain overflow-x-auto scrollbar-hide"
         >
           <div
-            class="flex flex-col justify-between min-h-[200px] min-w-[400px] max-w-[400px] mx-6 p-3 border border-night rounded-xl text-xl bg-offwhite text-night"
+            class="flex flex-col justify-between min-h-[200px] min-w-[400px] max-w-[400px] mr-6 p-3 border border-night rounded-xl text-xl bg-offwhite text-night"
           >
             <p class="">
               "Lurvin Peraza has worked for me for more than 5 years, during
@@ -136,19 +167,27 @@
           </div>
         </div>
       </div>
+
       <hr class="border-t border-t-night w-5/6 m-auto" />
-      <div class="flex flex-col justify-center items-center h-auto w-full">
+      <!--About-->
+      <div
+        class="flex flex-col justify-center items-center h-auto w-full text-center md:text-left"
+      >
         <h3 class="text-4xl uppercase font-bold text-center pt-4">About</h3>
         <div class="flex flex-col w-full justify-center items-center">
-          <div class="flex flex-row justify-between items-start my-6 w-5/6">
-            <div class="w-1/3 flex justify-center">
+          <div
+            class="flex flex-col md:inline justify-between items-start my-6 w-5/6"
+          >
+            <div
+              class="w-full md:w-1/2 lg:w-1/3 flex justify-center mb-3 md:mr-3 md:mb-0 float-left"
+            >
               <img
-                class="w-5/6 rounded-xl"
+                class="w-5/6 md:w-full rounded-xl"
                 src="img/stock-cleaning.jpg"
                 alt=""
               />
             </div>
-            <p class="w-2/3 text-xl">
+            <p class="w-full text-xl px-3 md:px-0">
               Peraza's Cleaning Services is dedicated to providing top cleaning
               standards in residential and commercial cleaning, attending the
               entire Washington DC area, which includes Maryland, Virginia and
@@ -164,20 +203,59 @@
             </p>
           </div>
 
-          <div class="lg:pl-8 w-5/6 px-3 text-xl">
+          <div class="w-5/6 px-3 lg:px-0 text-xl">
             <p>
               To schedule a service or just to request a free quote. Do not
               worry about your cleaning needs anymore, call us now at
               1-800-889-7265 or contact us by email at
-              lurvin@perazascleaningservices.com
+              <a href="mailto:lurvin@perazascleaningservices.com"
+                >lurvin@perazascleaningservices.com</a
+              >
             </p>
           </div>
         </div>
       </div>
 
-      <div class="h-[200px] w-full"></div>
+      <div class="h-[100px] w-full"></div>
     </div>
 
     <footer></footer>
+
+    <script>
+      var hammy = document.getElementById("menu-hamburger");
+      var dropdown = document.getElementById("menu");
+      var xs = document.getElementsByClassName("dx");
+      var ys = document.getElementsByClassName("dx1");
+      console.log(ys);
+
+      var dState = 0;
+      hammy.onclick = function () {
+        dropMenu();
+      };
+
+      function dropMenu() {
+        if (dState === 0) {
+          dropdown.classList.add("expanded");
+          xs[0].classList.add("expanded");
+          xs[1].classList.add("expanded");
+
+          ys[0].classList.add("expanded");
+          ys[1].classList.add("expanded");
+          ys[2].classList.add("expanded");
+
+          dState = 1;
+        } else {
+          dropdown.classList.remove("expanded");
+          xs[0].classList.remove("expanded");
+          xs[1].classList.remove("expanded");
+
+          ys[0].classList.remove("expanded");
+          ys[1].classList.remove("expanded");
+          ys[2].classList.remove("expanded");
+
+          dState = 0;
+        }
+      }
+    </script>
   </body>
 </html>
