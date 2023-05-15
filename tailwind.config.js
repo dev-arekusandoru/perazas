@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      sd: "350px",
+      sd: "480px",
 
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -27,8 +27,9 @@ module.exports = {
       ...colors,
       night: "#121212",
       offwhite: "#EBEBEB",
-      primary: "#8094AF",
+      primary: "#20293A",
+      darkprimary: "#4A5567",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
