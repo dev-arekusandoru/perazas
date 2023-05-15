@@ -1102,6 +1102,11 @@ video {
     border-bottom-color: rgb(74 85 103 / var(--tw-border-opacity));
   }
 
+  .dark\:border-t-offwhite {
+    --tw-border-opacity: 1;
+    border-top-color: rgb(235 235 235 / var(--tw-border-opacity));
+  }
+
   .dark\:bg-darkprimary {
     --tw-bg-opacity: 1;
     background-color: rgb(74 85 103 / var(--tw-bg-opacity));
