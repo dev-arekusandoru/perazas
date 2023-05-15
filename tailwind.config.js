@@ -30,6 +30,9 @@ module.exports = {
       primary: "#20293A",
       darkprimary: "#4A5567",
     },
+    boxShadow: {
+      c: "0 0 15px -3px #121212",
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
