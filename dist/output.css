@@ -610,6 +610,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1033,6 +1037,11 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(32 41 58 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .transition-all {
