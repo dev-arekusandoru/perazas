@@ -35,7 +35,7 @@
 
       <div
         id="menu-hamburger"
-        class="flex flex-col justify-center items-center lg:hidden w-[25px] h-[22px] mr-5 sd:mr-5 hover:cursor-pointer"
+        class="flex flex-col justify-center items-center lg:hidden w-[25px] h-[22px] mr-5 hover:cursor-pointer"
       >
         <div class="dx1 w-[25px] h-[4px] bg-offwhite mb-[5px]"></div>
         <div class="dx1 w-[25px] h-[4px] bg-offwhite"></div>
@@ -52,7 +52,8 @@
         id="menu"
         class="absolute top-[80px] flex lg:hidden flex-col items-center justify-around bg-primary dark:bg-darkprimary text-offwhite h-[250px] w-full py-8 border-t border-t-offwhite"
       >
-        <a href="index.html"
+        <a
+          href="index.html"
           class="font-bold text-4xl md:text-5xl w-full text-center h-[55px] leading-[55px]"
         >
           HOME
@@ -70,6 +71,7 @@
         >
           CONTACT
         </p>
+      </div>
     </nav>
     <!--body -->
     <div
@@ -91,7 +93,9 @@
           class="flex flex-col lg:flex-row text-center lg:text-left w-5/6 h-auto mb-10 items-center justify-center rounded-3xl bg-primary text-offwhite py-5 px-5"
         >
           <div class="w-full lg:w-1/2 h-full mb-3 lg:mb-0">
-            <h2  class="text-6xl uppercase font-extrabold tracking-wide">
+            <h2
+              class="text-[32px] sd:text-[40px] sm:text-5xl lg:text-6xl uppercase font-extrabold tracking-wide"
+            >
               Residential
             </h2>
             <p class="w-full lg:w-11/12 mt-3">
@@ -108,11 +112,13 @@
               are.
             </p>
           </div>
-          <hr class="lg:border-r-2 lg:border-r-offwhite lg:border-t-0 lg:w-0 lg:h-[270px] w-11/12 border-t-2 border-t-offwhite mb-3 lg:mb-0" />
+          <hr
+            class="lg:border-r-2 lg:border-r-offwhite lg:border-t-0 lg:w-0 lg:h-[270px] w-11/12 border-t-2 border-t-offwhite mb-3 lg:mb-0"
+          />
           <div class="w-full lg:w-1/2 pl-5">
             <p class="text-2xl font-bold">SERVICES</p>
             <div>
-              <ul class="list-disc ml-3">
+              <ul class="list-disc lg:ml-3">
                 <li>Vacuum, mop all floors</li>
                 <li>Clean kitchen, cabinets and drawers</li>
                 <li>Clean and disinfect all appliances</li>
@@ -127,11 +133,16 @@
         <div
           class="flex flex-col lg:flex-row text-center lg:text-left w-5/6 h-auto mb-10 items-center justify-center rounded-3xl bg-offwhite border-4 border-primary text-primary py-5 px-5"
         >
-          <div class="w-full lg:w-1/2 lg:first-letter:w-1/2 h-full mb-3 lg:mb-0">
-            <h2 class="text-6xl uppercase font-extrabold tracking-wide">
+          <div
+            class="w-full lg:w-1/2 lg:first-letter:w-1/2 h-full mb-3 lg:mb-0"
+          >
+            <h2
+              style="border: 1px solid red"
+              class="text-center lg:text-left text-[30px] sd:text-[36px] sl:text-4xl sm:text-5xl lg:text-[58px] uppercase font-extrabold tracking-wide"
+            >
               commercial
             </h2>
-            <p class="w-full lg:w-11/12 mt-3 ">
+            <p class="w-full lg:w-11/12 mt-3">
               We have extensive experience in commercial cleaning and our
               cleaners are guaranteed to provide an impressive service. Our
               innovative and uncompromising standards of cleaning and associate
@@ -142,11 +153,13 @@
               can be tailored to each customer’s needs and budgets.
             </p>
           </div>
-          <hr class="lg:border-r-2 lg:border-r-primary lg:border-t-0 lg:w-0 lg:h-[240px] w-11/12 border-t-2 border-t-primary mb-3 lg:mb-0" />
+          <hr
+            class="lg:border-r-2 lg:border-r-primary lg:border-t-0 lg:w-0 lg:h-[240px] w-11/12 border-t-2 border-t-primary mb-3 lg:mb-0"
+          />
           <div class="w-full lg:w-1/2 pl-5">
             <p class="text-2xl font-bold">SERVICES</p>
             <div>
-              <ul class="list-disc ml-3">
+              <ul class="list-disc lg:ml-3">
                 <li>Dusting counter tops and surfaces</li>
                 <li>Cleaning/sanitizing toilets</li>
                 <li>Cleaning tiled backsplash</li>
@@ -163,41 +176,6 @@
 
     <footer></footer>
 
-    <script>
-      var hammy = document.getElementById("menu-hamburger");
-      var dropdown = document.getElementById("menu");
-      var xs = document.getElementsByClassName("dx");
-      var ys = document.getElementsByClassName("dx1");
-      console.log(ys);
-
-      var dState = 0;
-      hammy.onclick = function () {
-        dropMenu();
-      };
-
-      function dropMenu() {
-        if (dState === 0) {
-          dropdown.classList.add("expanded");
-          xs[0].classList.add("expanded");
-          xs[1].classList.add("expanded");
-
-          ys[0].classList.add("expanded");
-          ys[1].classList.add("expanded");
-          ys[2].classList.add("expanded");
-
-          dState = 1;
-        } else {
-          dropdown.classList.remove("expanded");
-          xs[0].classList.remove("expanded");
-          xs[1].classList.remove("expanded");
-
-          ys[0].classList.remove("expanded");
-          ys[1].classList.remove("expanded");
-          ys[2].classList.remove("expanded");
-
-          dState = 0;
-        }
-      }
-    </script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
