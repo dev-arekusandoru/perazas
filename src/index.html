@@ -35,7 +35,7 @@
 
       <div
         id="menu-hamburger"
-        class="flex flex-col justify-center items-center lg:hidden w-[25px] h-[22px] mr-5 sd:mr-5 hover:cursor-pointer"
+        class="flex flex-col justify-center items-center lg:hidden w-[25px] h-[22px] mr-5 hover:cursor-pointer"
       >
         <div class="dx1 w-[25px] h-[4px] bg-offwhite mb-[5px]"></div>
         <div class="dx1 w-[25px] h-[4px] bg-offwhite"></div>
@@ -87,12 +87,12 @@
           <h3
             class="text-night text-4xl font-bold mx-10 mb-6 dark:text-offwhite text-center"
           >
-          Upgrade Your Living Experience, Where Elegance Meets Comfort!
+            Upgrade Your Living Experience, Where Elegance Meets Comfort!
           </h3>
           <a
             class="bg-primary dark:bg-darkprimary transition-all text-offwhite dark:text-night px-6 py-3 rounded-lg text-lg font-bold border border-offwhite dark:border-night hover:border-primary dark:hover:border-darkprimary hover:bg-offwhite dark:hover:bg-night hover:text-primary dark:hover:text-darkprimary"
             href="#"
-            >Call to Action</a
+            >See All Services</a
           >
         </div>
         <div class="flex justify-center items-center w-full lg:w-1/2 h-auto">
@@ -227,41 +227,6 @@
 
     <footer></footer>
 
-    <script>
-      var hammy = document.getElementById("menu-hamburger");
-      var dropdown = document.getElementById("menu");
-      var xs = document.getElementsByClassName("dx");
-      var ys = document.getElementsByClassName("dx1");
-      console.log(ys);
-
-      var dState = 0;
-      hammy.onclick = function () {
-        dropMenu();
-      };
-
-      function dropMenu() {
-        if (dState === 0) {
-          dropdown.classList.add("expanded");
-          xs[0].classList.add("expanded");
-          xs[1].classList.add("expanded");
-
-          ys[0].classList.add("expanded");
-          ys[1].classList.add("expanded");
-          ys[2].classList.add("expanded");
-
-          dState = 1;
-        } else {
-          dropdown.classList.remove("expanded");
-          xs[0].classList.remove("expanded");
-          xs[1].classList.remove("expanded");
-
-          ys[0].classList.remove("expanded");
-          ys[1].classList.remove("expanded");
-          ys[2].classList.remove("expanded");
-
-          dState = 0;
-        }
-      }
-    </script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
