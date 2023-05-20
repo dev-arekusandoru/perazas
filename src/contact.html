@@ -97,79 +97,91 @@
       <div class="flex flex-col w-full h-auto items-center justify-center">
         <!--Residential serivces services-->
         <form
-          class="flex flex-col lg:flex-row text-center lg:text-left w-2/3 h-auto mb-10 items-center justify-center rounded-3xl bg-primary text-primary py-5 px-5"
+          action="https://formsubmit.co/lurvin@perazascleaningservices.com"
+          method="POST"
+          class="flex flex-col-reverse lg:flex-row text-center lg:text-left w-5/6 lg:w-2/3 h-auto mb-10 items-center justify-center rounded-3xl bg-primary text-primary py-5 px-5"
         >
           <div
-            class="flex flex-col items-center justify-center w-1/2 h-[300px]"
+            class="flex flex-col items-center justify-center w-full lg:w-1/2 h-[250px] lg:h-[300px]"
           >
             <input
+              name="name"
+              required
               type="text"
-              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              class="w-11/12 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
               placeholder="Name"
             />
             <input
-              type="text"
-              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              name="email"
+              required
+              type="email"
+              class="w-11/12 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
               placeholder="Email"
             />
             <input
-              type="text"
-              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              name="phone"
+              type="tel"
+              class="w-11/12 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
               placeholder="Phone"
             />
 
-            <select class="w-5/6 h-[32px] mb-4" name="service" id="service">
-              <option disabled selected="selected">Select a service</option>
+            <select
+              class="w-11/12 h-[32px] mb-4"
+              name="service"
+              id="service"
+              required
+            >
               <option value="commercial">Commercial</option>
               <option value="residential">Residential</option>
             </select>
 
             <input
               type="submit"
-              class="border-2 border-offwhite bg-offwhite text-primary text-lg w-[120px] h-[40px] rounded-lg hover:cursor-pointer"
+              class="border-2 border-offwhite bg-offwhite text-primary text-lg w-[130px] h-[45px] rounded-lg hover:cursor-pointer mt-2"
               value="Submit"
             />
           </div>
           <div
-            class="w-1/2 flex flex-col items-center justify-center h-[300px]"
+            class="w-full lg:w-1/2 flex flex-col items-center justify-center h-[300px]"
           >
             <textarea
+              required
               name="comment"
               id="comment"
               placeholder="Leave a comment"
-              class="rounded-lg w-11/12 h-5/6 px-2 py-1 resize-none scrollbar-hide"
+              class="rounded-lg w-11/12 h-[275px] px-2 py-1 resize-none scrollbar-hide"
             ></textarea>
           </div>
         </form>
 
-        <!--commercial services-->
+        <!--social links-->
         <div
-          class="flex flex-col lg:flex-row text-center lg:text-left w-2/3 h-auto mb-10 items-center justify-around rounded-3xl bg-offwhite border-4 border-primary text-primary py-5 px-5 lg:px-10"
+          class="flex lg:flex-row flex-wrap text-center lg:text-left w-5/6 lg:w-2/3 h-auto mb-10 items-center justify-around rounded-3xl bg-offwhite border-4 border-primary text-primary py-5 px-5 lg:px-10"
         >
           <a
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i class="fa-regular fa-phone fa-4x" style="color: #20293a"></i>
           </a>
           <a
             href="mailto:lurvin@perazascleaningservices.com"
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i class="fa-regular fa-envelope fa-4x" style="color: #20293a"></i>
           </a>
           <a
             href="https://google.com"
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i class="fa-brands fa-instagram fa-4x" style="color: #20293a"></i>
           </a>
           <a
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i class="fa-brands fa-facebook-f fa-4x" style="color: #20293a"></i>
           </a>
           <a
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i
               class="fa-brands fa-linkedin-in fa-4x"
@@ -177,7 +189,7 @@
             ></i>
           </a>
           <a
-            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+            class="flex items-center justify-center min-w-[90px] h-[90px] hover:cursor-pointer"
           >
             <i class="fa-brands fa-yelp fa-4x" style="color: #20293a"></i>
           </a>
