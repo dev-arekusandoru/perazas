@@ -6,6 +6,10 @@
     <title>Services</title>
     <link href="../dist/output.css" rel="stylesheet" />
     <link href="css/custom-styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/125fe29883.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="bg-slate-800 dark:bg-slate-600 scrollbar-hide">
     <nav
@@ -85,92 +89,98 @@
       <div
         class="w-5/6 lg:w-3/5 flex flex-col my-10 items-center justify-center"
       >
-        <p class="text-night text-2xl font-bold text-center">
-          Peraza's Cleaning Services provides a complete home care service
-          specially designed to fit any budget, schedule, and needs.
+        <p class="text-primary text-5xl font-bold text-center uppercase">
+          Contact Us
         </p>
       </div>
 
       <div class="flex flex-col w-full h-auto items-center justify-center">
         <!--Residential serivces services-->
-        <div
-          class="flex flex-col lg:flex-row text-center lg:text-left w-5/6 h-auto mb-10 items-center justify-center rounded-3xl bg-primary text-offwhite py-5 px-5"
+        <form
+          class="flex flex-col lg:flex-row text-center lg:text-left w-2/3 h-auto mb-10 items-center justify-center rounded-3xl bg-primary text-primary py-5 px-5"
         >
-          <div class="w-full lg:w-1/2 h-full mb-3 lg:mb-0">
-            <h2
-              class="text-center lg:text-left text-[30px] sl:text-4xl sd:text-[50px] sm:text-5xl lg:text-[58px] uppercase font-extrabold tracking-wide"
-            >
-              Residential
-            </h2>
-            <p class="w-full lg:w-11/12 mt-3">
-              At Peraza's Cleaning Services, we are committed to detail,
-              continuous research and development of cleaning techniques and
-              competitive prices. Our professionally trained domestic cleaners
-              will make sure your home will be cleaned to your highest
-              expectations and you will be surprised how affordable our rates
-              are. At Peraza's Cleaning Services, we are committed to detail,
-              continuous research and development of cleaning techniques and
-              competitive prices. Our professionally trained domestic cleaners
-              will make sure your home will be cleaned to your highest
-              expectations and you will be surprised how affordable our rates
-              are.
-            </p>
+          <div
+            class="flex flex-col items-center justify-center w-1/2 h-[300px]"
+          >
+            <input
+              type="text"
+              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="w-5/6 leading-8 rounded-md border border-offwhite bg-offwhite pl-2 mb-3"
+              placeholder="Phone"
+            />
+
+            <select class="w-5/6 h-[32px] mb-4" name="service" id="service">
+              <option disabled selected="selected">Select a service</option>
+              <option value="commercial">Commercial</option>
+              <option value="residential">Residential</option>
+            </select>
+
+            <input
+              type="submit"
+              class="border-2 border-offwhite bg-offwhite text-primary text-lg w-[120px] h-[40px] rounded-lg hover:cursor-pointer"
+              value="Submit"
+            />
           </div>
-          <hr
-            class="lg:border-r-2 lg:border-r-offwhite lg:border-t-0 lg:w-0 lg:h-[270px] w-11/12 border-t-2 border-t-offwhite mb-3 lg:mb-0"
-          />
-          <div class="w-full lg:w-1/2 pl-5">
-            <p class="text-2xl font-bold">SERVICES</p>
-            <div>
-              <ul class="list-disc lg:ml-3">
-                <li>Vacuum, mop all floors</li>
-                <li>Clean kitchen, cabinets and drawers</li>
-                <li>Clean and disinfect all appliances</li>
-                <li>Rubbish Removal</li>
-                <li>Waste Clearance</li>
-              </ul>
-            </div>
+          <div
+            class="w-1/2 flex flex-col items-center justify-center h-[300px]"
+          >
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Leave a comment"
+              class="rounded-lg w-11/12 h-5/6 px-2 py-1 resize-none scrollbar-hide"
+            ></textarea>
           </div>
-        </div>
+        </form>
 
         <!--commercial services-->
         <div
-          class="flex flex-col lg:flex-row text-center lg:text-left w-5/6 h-auto mb-10 items-center justify-center rounded-3xl bg-offwhite border-4 border-primary text-primary py-5 px-5"
+          class="flex flex-col lg:flex-row text-center lg:text-left w-2/3 h-auto mb-10 items-center justify-around rounded-3xl bg-offwhite border-4 border-primary text-primary py-5 px-5 lg:px-10"
         >
-          <div
-            class="w-full lg:w-1/2 lg:first-letter:w-1/2 h-full mb-3 lg:mb-0"
+          <a
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
           >
-            <h2
-              class="text-center lg:text-left text-[30px] sl:text-4xl sd:text-[50px] sm:text-5xl lg:text-[58px] uppercase font-extrabold tracking-wide"
-            >
-              commercial
-            </h2>
-            <p class="w-full lg:w-11/12 mt-3">
-              We have extensive experience in commercial cleaning and our
-              cleaners are guaranteed to provide an impressive service. Our
-              innovative and uncompromising standards of cleaning and associate
-              services can be tailored to each customer’s needs and budgets. We
-              have extensive experience in commercial cleaning and our cleaners
-              are guaranteed to provide an impressive service. Our innovative
-              and uncompromising standards of cleaning and associate services
-              can be tailored to each customer’s needs and budgets.
-            </p>
-          </div>
-          <hr
-            class="lg:border-r-2 lg:border-r-primary lg:border-t-0 lg:w-0 lg:h-[240px] w-11/12 border-t-2 border-t-primary mb-3 lg:mb-0"
-          />
-          <div class="w-full lg:w-1/2 pl-5">
-            <p class="text-2xl font-bold">SERVICES</p>
-            <div>
-              <ul class="list-disc lg:ml-3">
-                <li>Dusting counter tops and surfaces</li>
-                <li>Cleaning/sanitizing toilets</li>
-                <li>Cleaning tiled backsplash</li>
-                <li>Vacuuming and mopping of floors</li>
-                <li>Cleaning kitchen and dining room</li>
-              </ul>
-            </div>
-          </div>
+            <i class="fa-regular fa-phone fa-4x" style="color: #20293a"></i>
+          </a>
+          <a
+            href="mailto:lurvin@perazascleaningservices.com"
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+          >
+            <i class="fa-regular fa-envelope fa-4x" style="color: #20293a"></i>
+          </a>
+          <a
+            href="https://google.com"
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+          >
+            <i class="fa-brands fa-instagram fa-4x" style="color: #20293a"></i>
+          </a>
+          <a
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+          >
+            <i class="fa-brands fa-facebook-f fa-4x" style="color: #20293a"></i>
+          </a>
+          <a
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+          >
+            <i
+              class="fa-brands fa-linkedin-in fa-4x"
+              style="color: #20293a"
+            ></i>
+          </a>
+          <a
+            class="flex items-center justify-center w-[90px] h-[90px] hover:cursor-pointer"
+          >
+            <i class="fa-brands fa-yelp fa-4x" style="color: #20293a"></i>
+          </a>
         </div>
       </div>
 
