@@ -28,12 +28,12 @@ module.exports = {
     colors: {
       ...colors,
       night: "#121212",
-      offwhite: "#EBEBEB",
+      offwhite: "#FCfCfc",
       primary: "#20293A",
       darkprimary: "#4A5567",
     },
     boxShadow: {
-      c: "0 0 15px -3px #121212",
+      c: "0 0 0.5rem rgba(0, 0, 0, 0.35)",
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
